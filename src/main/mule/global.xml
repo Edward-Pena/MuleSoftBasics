@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="0a7282b7-c050-4de9-b2e5-92a593fcdd25" >
 		<http:listener-connection host="0.0.0.0" port="${https.port}" protocol="HTTPS">
 			<tls:context >
-				<tls:key-store path="keystore-helloworld.jks" alias="key-alias" keyPassword="123456" password="123456" />
+				<tls:key-store path="keystore.jks" alias="mule" keyPassword="password" password="password" />
 			</tls:context>
 		</http:listener-connection>
 	</http:listener-config>
